@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock Paper Scissor</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<header>
+		<h2 class="title">ROCK </h2><span class="dash">-</span> 
+		<h2 class="title">PAPER  </h2><span class="dash">-</span>
+		<h2 class="title">SCISSOR</h2>
+	</header>
+
+	<main>
+		
+		<div class="playercontainer">
+		<h2>YOU</h2>
+		<div class="player">
+			<img  alt="rock" class="pimg" src="img/rock.jpg">
+			<img  alt="paper" class="pimg" src="img/paper.jpg">
+			<img  alt="scissor" class="pimg" style="background:white;" src="img/scissor.png">
+		</div>
+		</div>
+
+		<div class="computercontainer">
+		<h2>COMPUTER</h2>
+		<div class="computer">
+			
+			<img alt="crock" class="cimg" src="img/rock.jpg">
+			<img alt="cpaper" class="cimg" src="img/paper.jpg">
+			<img alt="cscissor" class="cimg" style="background:white;" src="img/scissor.png">
+		</div>
+		</div>
+
+		<p contenteditable="true" class="Win"></p>
+
+		<button class="restart" onclick="Restart()">Once Again</button>
+	</main>
+
+	<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
