@@ -61,6 +61,7 @@ main
 	animation-name: animate;
 	animation-duration: .8s;
 	animation-iteration-count: infinite;
+        animation-direction:reverse;
 	animation-play-state: paused;
 }
 
