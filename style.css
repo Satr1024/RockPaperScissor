@@ -1,0 +1,194 @@
+*
+{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body
+{
+	width: 100vw;
+	height: 100vh;
+	padding: 100px;
+	background-color: cornflowerblue;
+}
+
+header
+{
+	text-align: center;
+	color:white;
+}
+
+h2.title
+{
+	width: min-content;
+	border:1px solid white;
+	text-align: center;
+	font-family: sans-serif;
+	display: inline-block;
+}
+
+h2.title::first-letter
+{
+	font-size: 3rem;
+}
+
+span.dash
+{
+	font-size:4rem;
+}
+
+main
+{
+	margin-top:40px; 
+	overflow: hidden;
+	padding:40px;
+	position: relative;
+}
+
+.player
+{
+	padding: 0 20px;
+	animation-name: animate;
+	animation-duration: .8s;
+	animation-iteration-count: infinite;
+	animation-play-state: paused;
+}
+
+.computer
+{
+	padding: 0 20px;
+	animation-name: animate;
+	animation-duration: .8s;
+	animation-iteration-count: infinite;
+	animation-play-state: paused;
+}
+
+main h2
+{
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 2rem;	
+	margin-bottom: 40px;
+	position: absolute;
+	top: 0;
+
+}
+
+img
+{
+	width:70px;
+	border:1px solid black;
+	float: left;
+	margin:10px;
+	border-radius: 50%;
+}
+
+img.pimg
+{
+	cursor: pointer;
+	animation-name: animate;
+	animation-duration: .8s;
+	animation-iteration-count: infinite;
+	animation-play-state: paused;
+
+}
+
+.playercontainer
+{
+	height: 176px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	float: left;
+	width: 50%;
+
+}
+
+
+.computercontainer
+{
+	width: 50%;
+	height: 176px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	float: right;	
+}
+
+.computer
+{
+	animation-name: animate;
+	animation-duration: .8s;
+	animation-iteration-count: infinite;
+	animation-play-state: paused;
+	transform: rotate(0deg);
+}
+
+@keyframes animate
+{
+	0%
+	{
+		transform: translateX(0px);
+	}
+
+	50%
+	{
+		transform: translateX(-40px);
+	}
+	100%
+	{
+		transform: translateX(0px);
+	}
+
+}
+
+p.Win
+{
+	text-align: center;
+	font-size: 2rem;
+	color: white;
+}
+
+
+button
+{
+	display: block;
+	font-size: 1.3rem;
+	padding:10px 20px;
+	margin:auto;
+	margin-top: 60px;
+	display: none;
+}
+
+@media screen and (max-width: 800px)
+{
+	.pimg,.cimg
+	{
+
+		width: 50px;
+
+	}
+	span.dash
+	{
+		display: none;
+	}
+
+	header
+	{
+		margin-top: 100px;
+	}
+
+	.playercontainer h2,.computercontainer h2
+	{
+		font-size: 1.4rem;
+	}
+	body
+	{
+		padding: 0px;
+	}
+
+
+} 
