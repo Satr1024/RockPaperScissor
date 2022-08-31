@@ -137,7 +137,7 @@ img.pimg
 
 	50%
 	{
-		transform: translateX(-40px);
+		transform: translateX(40px);
 	}
 	100%
 	{
