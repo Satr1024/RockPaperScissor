@@ -17,10 +17,9 @@ for(let img of images)
 {
 	img.onclick=function()
 	{
-		let ranimg=Math.floor(Math.random()*(3-0));
-		ranimg=Math.floor(Math.random()*(3-0));
-		if(ranimg==4)
-			ranimg=3;
+		let ranimg=Math.floor(Math.random()*3);
+		ranimg=Math.floor(Math.random()*3);
+		
 
 
 		cont.style.animationPlayState="running";		
